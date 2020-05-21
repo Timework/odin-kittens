@@ -10,6 +10,11 @@
   </head>
 
   <body>
+  <%= link_to "Create a New Kitten", new_kitten_path, class: "new_kitten"%>
+  <%= link_to "All Kittens", kittens_path, class: "new_kitten"%>
+  <p class="flash">
+    <%= flash.notice %>
+  </p>
     <%= yield %>
   </body>
 </html>
